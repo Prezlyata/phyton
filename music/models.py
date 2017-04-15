@@ -9,6 +9,6 @@ class Album(models.Model):
     album_logo = models.CharField(max_length=1000)
 
 class Song(models.Model):
-    album - model.ForeignKey(Album, on_delete=models.CASCADE)
+    album = models.ForeignKey(Album, on_delete=models.CASCADE)
     file_type = models.CharField(max_length=10)
     song_title = models.CharField(max_length=250)
